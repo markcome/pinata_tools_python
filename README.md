@@ -22,7 +22,7 @@ API keys from the ```pinata_key.json``` file.
  
 In order to run these function the script need the ```requests``` python module (https://docs.python-requests.org/en/latest/user/install/#install).
 
-## Pinata tools
-The ```test.py``` file contains an example of the utilization of the above described functions.
+## Test
+The ```test.py``` file contains an example of the utilization of the above described functions. The test will pin and unpin the ```test.jpeg``` image.
 
 ***
