@@ -16,7 +16,7 @@ def pin_to_IPFS(file_path, keys):
     # Request info
     url = 'https://api.pinata.cloud/pinning/pinFileToIPFS'
     header = {"pinata_api_key": keys["API Key"], "pinata_secret_api_key": keys["API Secret"]}
-    file = {'file': file_path}
+    file = {'file': open(file_path, 'rb')}
 
     try:
         r = requests.post(url, headers=header, files=file, verify=True)
